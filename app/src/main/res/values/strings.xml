@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- VOLLEY STRINGS-->
+
+    <string name="volley_error_not_found">Não foram encontrados resultados para sua busca.</string>
+    <string name="volley_connection_error">Por favor verifique sua conexão.</string>
+    <string name="volley_parse_error">Ocorreu um erro inesperado.</string>
+    <string name="volley_timeout_error">A conexão atingiu o limite de tempo.</string>
+
+
+
+    <!--DB FLOW STRINGS-->
+
+    <string name="db_flow_save_success">Acidionado aos favoritos com sucesso!</string>
+    <string name="db_flow_save_failure">Houve um erro ao salvar este filme.</string>
+</resources>

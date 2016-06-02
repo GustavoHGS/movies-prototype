@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_local_movies"
+            android:title="Assistir" />
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_video_library"
+            android:title="Biblioteca" />
+        <item
+            android:id="@+id/nav_wishes"
+            android:icon="@drawable/ic_book"
+            android:title="Lista de desejos" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_shop"
+            android:title="Comprar" />
+    </group>
+
+    <item android:title="Congigurações">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartilhar" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Enviar" />
+        </menu>
+    </item>
+
+</menu>

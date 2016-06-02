@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/fragment_movie_details"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="3dp"
+        app:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:contentPaddingLeft="-3dp"
+        card_view:contentPaddingRight="-3dp"
+        card_view:contentPaddingTop="-3dp"
+        card_view:contentPaddingBottom="-3dp"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:elevation="3dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/movie_details_card_thumbnail"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/sym_def_app_icon"
+                />
+            <TextView
+                android:id="@+id/movie_details_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/black_opaque"
+                android:text="Título do Filme"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:layout_toRightOf="@+id/movie_details_card_thumbnail"
+                />
+            <TextView
+                android:id="@+id/movie_details_card_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/black_opaque"
+                android:text="Ano: 2015"
+                android:layout_below="@+id/movie_details_card_title"
+                android:layout_toRightOf="@+id/movie_details_card_thumbnail"
+
+                />
+            <TextView
+                android:id="@+id/movie_details_card_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/black_opaque"
+                android:text="Genero: acao"
+                android:layout_below="@+id/movie_details_card_year"
+                android:layout_toRightOf="@+id/movie_details_card_thumbnail"
+
+                />
+            <TextView
+                android:id="@+id/movie_details_card_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/black_opaque"
+                android:text="Movie"
+                android:layout_below="@+id/movie_details_card_genre"
+                android:layout_toRightOf="@+id/movie_details_card_thumbnail"
+
+                />
+            <TextView
+                android:id="@+id/movie_details_card_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/black_opaque"
+                android:text="Duração: 90min"
+                android:layout_below="@+id/movie_details_card_type"
+                android:layout_toRightOf="@+id/movie_details_card_thumbnail"
+
+                />
+            <TextView
+                android:id="@+id/movie_details_card_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black_opaque"
+                android:text="Alguma descrição mais longa do filme"
+                android:layout_below="@+id/movie_details_card_thumbnail"
+                android:layout_alignParentLeft="true"
+                android:padding="8dp"
+                />
+            <Button
+                android:id="@+id/details_save_movie_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_below="@+id/movie_details_card_description"
+                android:text="Adicionar"
+                android:drawableLeft="@drawable/ic_star_red"
+                android:paddingRight="90dp"
+                android:paddingLeft="90dp"
+                android:textColor="@color/white"
+                style="@style/SelectableItemBackground"
+                android:background="@color/colorPrimary"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
